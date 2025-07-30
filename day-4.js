@@ -47,32 +47,63 @@
 //// Practice Exercise---------///
 
 
-let names = ["Messi", "De Maria", "Emi", "Alvarez","Enzo"];
-names.map(name => console.log(name));
+// let names = ["Messi", "De Maria", "Emi", "Alvarez","Enzo"];
+// names.map(name => console.log(name));
 
-let numbers = [1,2,3,4,5,6,7,8,9,10];
-let even = numbers.filter(n => n % 2 === 0);
-console.log(even);
+// let numbers = [1,2,3,4,5,6,7,8,9,10];
+// let even = numbers.filter(n => n % 2 === 0);
+// console.log(even);
  
-let person = {
-  name: "Labib",
-  age: 22,
-  city: "Dhaka"
-};
+// let person = {
+//   name: "Labib",
+//   age: 22,
+//   city: "Dhaka"
+// };
 
-for (let key in person){
-    console.log(key + ": " + person[key]);
-}
+// for (let key in person){
+//     console.log(key + ": " + person[key]);
+// }
 
 
-  let subjects = {
-    name: "Panda",
-    age : 15,
-    subjects : ["Math", "Physics", "Chemistry","English","biology"]
-  };
+//   let subjects = {
+//     name: "Panda",
+//     age : 15,
+//     subjects : ["Math", "Physics", "Chemistry","English","biology"]
+//   };
   
 
-  function sum(...nums) {
+//   function sum(...nums) {
+//     return nums.reduce((acc, val) => acc + val, 0);
+//   }
+//   console.log(sum(1,2,5));
+
+  const numbered = [50, 100, 150];
+  const [first, second] = numbered;
+  console.log(first);
+  console.log(second);
+
+
+const person = {
+    name: "Shawon",
+    age : 25,
+    city:"Dhaka",
+}
+
+const {name, age} = person;
+console.log(name);
+console.log(age);
+
+const user = {name: "Labib", age:26};
+const updatedUser = {...user, city: "Dhaka"};
+
+console.log(updatedUser);
+
+
+function sum(...nums) {
     return nums.reduce((acc, val) => acc + val, 0);
-  }
-  console.log(sum(1,2,5));
+}
+console.log(sum(5,10,15));
+
+let age = 24;
+let result = age >= 18 ? "Adult" : "Minor";
+console.log(result);
